@@ -1,9 +1,7 @@
-
-
 from django.urls import path
-from comments import views
+from likes import views
 
 urlpatterns = [
-    path('comments/', views.CommentList.as_view()),
-    path('comments/<int:pk>/', views.CommentDetail.as_view())
+    path('likes/', views.LikeList.as_view()),
+    path('likes/<int:pk>/', views.LikeDetail.as_view()),
 ]
